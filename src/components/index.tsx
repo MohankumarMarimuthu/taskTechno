@@ -6,7 +6,7 @@ import ModalForm from "./ModalForm";
 
 const HomepageComponents = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [clickedEmployee, setClickedEmployee] = useState();
+  const [clickedEmployee, setClickedEmployee] = useState<any>();
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -14,6 +14,7 @@ const HomepageComponents = () => {
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
+    setClickedEmployee(null);
   };
   return (
     <div>
