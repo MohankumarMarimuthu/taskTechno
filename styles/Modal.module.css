@@ -19,6 +19,13 @@
   max-width: 800px;
   position: relative;
 }
+@media (max-height: 900px) {
+  .modalContent {
+    height: 400px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+}
 
 .closeButton {
   position: absolute;
